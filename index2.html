@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 2</title>
+</head>
+<body>
+<script>
+    let nhietdo=Number(prompt("Nhập nhiệt độ :"));
+    let nhietdo1= nhietdo2= 0;
+    while (nhietdo<20 || nhietdo>100){
+        if (nhietdo<20){
+           nhietdo1=Number(prompt("Xin vui lòng tăng nhiệt độ:")) ;
+           alert("Nhiệt độ bạn nhập là = " + nhietdo1)
+            break;
+        } else if (nhietdo>100){
+            nhietdo2=Number(prompt("Xin vui lòng giảm nhiệt độ : "));
+            alert("Nhiệt đô bạn nhập là = " + nhietdo2)
+            break;
+        } else {
+            alert("Nhiệt độ bạn nhập là = " + nhietdo)
+            break;
+        }
+    }
+</script>
+</body>
+</html>
