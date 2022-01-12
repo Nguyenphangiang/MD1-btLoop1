@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 8</title>
+</head>
+<body>
+<input type="button" id="play" value="Chơi" onclick="pressBtn()">
+<script>
+    function pressBtn(){
+        let input1=Number(prompt("Nhập số từ số : "));
+        let input2=Number(prompt(" đến: "));
+        let randomNum= Math.floor(Math.random()*(input1-input2)*-1) ;
+        let input3=Number(prompt("số bạn chọn trong khoảng là :"));
+        let cnt=3;
+        while (cnt>0){
+            if (randomNum===input3){
+                alert("Chúc mừng bạn đã chiến thằng !!!");
+                break;
+            } else if (cnt<5){
+                alert("Ko chính xác, mời bạn chọn lại !")
+                input3=Number(prompt("số bạn chọn trong khoảng là :"))
+                cnt++;
+            } else {
+                alert("Bạn đã Thua !")
+                break;
+            }
+        }
+
+    }
+</script>
+</body>
+</html>
